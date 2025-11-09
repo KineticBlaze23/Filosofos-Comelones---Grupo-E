@@ -1,4 +1,12 @@
 # Filosofos-Comelones---Grupo-E
+# Integrantes
+* Fabio Pillajo
+* Darwin Cadena
+• Frank Quinatoa
+• Martín Roca
+• Carolay Pillajo
+• Ariel Burgos
+• Steven Moreta
 # Objetivo General
 Implementar una solución al problema de los cinco filósofos comelones mediante procesos, hilos y semáforos en lenguaje C, ejecutada en VirtualBox con Ubuntu Server. El propósito es comprender la sincronización en sistemas operativos y asegurar la correcta administración de recursos compartidos, evitando condiciones de carrera (race condition), interbloqueo (deadlock) e inanición (starvation).
 
