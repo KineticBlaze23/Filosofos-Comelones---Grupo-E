@@ -24,9 +24,9 @@ De esta forma la ejecucion no genera bloqueos ni inanición.
 
 # Prevención de problemas.
 Los problemas que fueron controlados fueron los siguientes:
-* Race Condition: Este problema surge cuando varios hilos acceden o modifican un recurso compartido al mismo tiempo, generando resultados inconsistentes. En el programa, cada tenedor se protege con un semáforo individual (sem_wait y sem_post), asegurando que solo un filósofo pueda usarlo a la vez. Esto garantiza exclusión mutua y elimina las condiciones de carrera.
-* Deadlock: El interbloqueo aparece cuando todos los filósofos toman un tenedor y esperan el otro indefinidamente. Para evitarlo, se implemento un semáforo adicional llamado max_philosophers, que limita a N-1 filósofos dentro de la zona crítica. Así, siempre queda al menos un tenedor libre, permitiendo que uno de ellos pueda completar su ciclo de comer y liberar los recursos.
-* Starvation: La inanición ocurre cuando uno o más filósofos nunca logran acceder a los recursos porque otros monopolizan los tenedores. La solución evita esto mediante el uso de semáforos justos y liberación ordenada de recursos, de modo que todos los filósofos obtienen turnos equitativos para comer con el paso del tiempo.
+* **Race Condition**: Este problema surge cuando varios hilos acceden o modifican un recurso compartido al mismo tiempo, generando resultados inconsistentes. En el programa, cada tenedor se protege con un semáforo individual (sem_wait y sem_post), asegurando que solo un filósofo pueda usarlo a la vez. Esto garantiza exclusión mutua y elimina las condiciones de carrera.
+* **Deadlock**: El interbloqueo aparece cuando todos los filósofos toman un tenedor y esperan el otro indefinidamente. Para evitarlo, se implemento un semáforo adicional llamado max_philosophers, que limita a N-1 filósofos dentro de la zona crítica. Así, siempre queda al menos un tenedor libre, permitiendo que uno de ellos pueda completar su ciclo de comer y liberar los recursos.
+* **Starvation**: La inanición ocurre cuando uno o más filósofos nunca logran acceder a los recursos porque otros monopolizan los tenedores. La solución evita esto mediante el uso de semáforos justos y liberación ordenada de recursos, de modo que todos los filósofos obtienen turnos equitativos para comer con el paso del tiempo.
 
 # Ejecucion
 ## Requisitos
@@ -35,6 +35,15 @@ Los problemas que fueron controlados fueron los siguientes:
 ## Compilacion y ejecución
 <img width="938" height="38" alt="image" src="https://github.com/user-attachments/assets/92d6a34b-4652-4c2f-93c1-2e765d573ae9" />
 
-* lpthread : Libreria POSIX threads, permite crear y gestionar hilos.
+* **lpthread** : Libreria POSIX threads, permite crear y gestionar hilos.
+
+  ## Capturas
+  * Ejecucion terminal
+  <img width="711" height="485" alt="image" src="https://github.com/user-attachments/assets/e698e73f-2343-402c-bec5-313476173ee3" />
+  * **Nota:** La ejecución del programa es infinita, ya que los filósofos repiten constantemente el ciclo de pensar y comer hasta que se interrumpe manualmente (Ctrl + C).
+
+  * Monitoreo de procesos
+  Visualización de hilos activos mediante el comando **htop**
+<img width="1020" height="242" alt="image" src="https://github.com/user-attachments/assets/5d1b02c7-f0d8-4dd6-a6bc-060a1e463ce6" />
 
 ---
