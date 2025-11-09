@@ -38,12 +38,12 @@ Los problemas que fueron controlados fueron los siguientes:
 * **lpthread** : Libreria POSIX threads, permite crear y gestionar hilos.
 
   ## Capturas
-  * Ejecucion terminal
-  * **Nota** : La ejecución del programa es infinita, ya que los filósofos repiten constantemente el ciclo de pensar y comer hasta que se interrumpe manualmente (Ctrl + C).
+  * **Ejecucion terminal**
+  **Nota** : La ejecución del programa es infinita, ya que los filósofos repiten constantemente el ciclo de pensar y comer hasta que se interrumpe manualmente (Ctrl + C).
   <img width="711" height="485" alt="image" src="https://github.com/user-attachments/assets/e698e73f-2343-402c-bec5-313476173ee3" />
  
-  * Monitoreo de procesos
-  Visualización de hilos activos mediante el comando **htop**
+  * **Monitoreo de procesos**
+  * Visualización de hilos activos mediante el comando **htop**
 <img width="1020" height="242" alt="image" src="https://github.com/user-attachments/assets/5d1b02c7-f0d8-4dd6-a6bc-060a1e463ce6" />
 
 ---
