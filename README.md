@@ -43,8 +43,7 @@ Los problemas que fueron controlados fueron los siguientes:
   <img width="711" height="485" alt="image" src="https://github.com/user-attachments/assets/e698e73f-2343-402c-bec5-313476173ee3" />
  
 * **Monitoreo de procesos**  
-  Visualización de **hilos activos** con `htop`, mostrando la ejecución simultánea  
-  de los filósofos en tiempo real.
+  Visualización de **hilos activos** con `htop`, mostrando la ejecución simultánea de los filósofos en tiempo real.
 <img width="1020" height="242" alt="image" src="https://github.com/user-attachments/assets/5d1b02c7-f0d8-4dd6-a6bc-060a1e463ce6" />
 
 
