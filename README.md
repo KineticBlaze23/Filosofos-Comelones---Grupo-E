@@ -40,7 +40,7 @@ Los problemas que fueron controlados fueron los siguientes:
   ## Capturas
   * Ejecucion terminal
   <img width="711" height="485" alt="image" src="https://github.com/user-attachments/assets/e698e73f-2343-402c-bec5-313476173ee3" />
-  * **Nota:** La ejecución del programa es infinita, ya que los filósofos repiten constantemente el ciclo de pensar y comer hasta que se interrumpe manualmente (Ctrl + C).
+  * **Nota** : La ejecución del programa es infinita, ya que los filósofos repiten constantemente el ciclo de pensar y comer hasta que se interrumpe manualmente (Ctrl + C).
 
   * Monitoreo de procesos
   Visualización de hilos activos mediante el comando **htop**
